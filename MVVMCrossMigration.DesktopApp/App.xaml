@@ -1,0 +1,23 @@
+﻿<mvvm:MvxApplication
+    xmlns:mvvm="clr-namespace:MvvmCross.Platforms.Wpf.Views;assembly=MvvmCross.Platforms.Wpf"
+    x:Class="MVVMCrossMigration.DesktopApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:vms="clr-namespace:MVVMCrossMigration.Core.ViewModels;assembly=MVVMCrossMigration.Core"
+            xmlns:controls="clr-namespace:MVVMCrossMigration.DesktopApp.Views"
+             xmlns:local="clr-namespace:MVVMCrossMigration.DesktopApp"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <DataTemplate DataType="{x:Type vms:MenuViewModel}">
+                <controls:MenuView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vms:RootViewModel}">
+                <controls:RootView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vms:DetailViewModel}">
+                <controls:DetailView/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</mvvm:MvxApplication>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <UserSecretsId>a9c67070-a76b-48ba-8800-3fb0bdc29892</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\MvvmCross\MvvmCross\MvvmCross.csproj" />
+  </ItemGroup>
+
+</Project>
